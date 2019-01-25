@@ -8,9 +8,15 @@
   "parserOptions": {
       "ecmaVersion": 2018
   },
+  "globals": {
+    "before": true,
+    "browser": true,
+    "$": true
+  },
   "plugins": [
       "jest",
-      "jsdoc"
+      "jsdoc",
+      "mocha"
   ],
   "rules": {
       "indent": [
@@ -37,6 +43,7 @@
       "jsdoc/require-param-name": 1,
       "jsdoc/require-param-type": 1,
       "jsdoc/require-returns-type": 1,
-      "jsdoc/valid-types": 1
+      "jsdoc/valid-types": 1,
+      "mocha/no-exclusive-tests": "error"
   }
 }
